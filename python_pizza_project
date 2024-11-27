@@ -1,0 +1,67 @@
+# created a pizza order taker that provides a total price based on user inputs
+# used concepts of inputs, if else statements, nested if else and print(f"") 
+# 2 ways the coding challenge was done 
+
+
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M or L: ")
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+bill = 0
+
+# small pizza = $15
+# medium pizza = $20
+# Large pizza = $25
+# add pepperoni for small pizza= +$2
+# add pepperoni for medium pizza = +$3
+# add pepperoni for large pizza = +$3
+# add extra cheese for any pizza = +$1
+
+if size == "S" or size == "s":
+    bill = bill  + 15
+    if pepperoni == "Y" or pepperoni == "y":
+        bill = bill + 2
+    if extra_cheese == "Y" or extra_cheese == "y":
+        bill = bill + 1
+    print(f"Your final bill is: ${bill}.")
+
+elif size == "M" or size == "m":
+    bill = bill + 20
+    if pepperoni == "Y" or pepperoni == "y":
+        bill = bill + 3
+    if extra_cheese == "Y" or extra_cheese == "y":
+        bill = bill + 1
+    print(f"Your final bill is: ${bill}.")
+
+elif size == "L" or size == "l":
+    bill = bill + 25
+    if pepperoni == "Y" or pepperoni == "y":
+        bill = bill + 3
+    if extra_cheese == "Y" or extra_cheese == "y":
+        bill = bill + 1
+    print(f"Your final bill is: ${bill}.")
+
+else:
+    print("Please choose the correct pizza size option : S, M or L")
+
+
+# Second way to do this problem. This is the solution provided by professor Yu
+# if size == "S" or size == "s":
+#     bill = bill  + 15
+#
+# elif size == "M" or size == "m":
+#     bill = bill + 20
+#
+# elif size == "L" or size == "l":
+#     bill = bill + 25
+#
+# else:
+#     print("Please choose the correct pizza size option : S, M or L")
+#
+# if pepperoni == "Y" or pepperoni == "y":
+#     if size == "S" or size == "s":
+#         bill = bill + 2
+#     else:
+#         bill = bill + 3
+#
+# print(f"Your final bill is: ${bill}.")
