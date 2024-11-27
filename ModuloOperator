@@ -1,0 +1,12 @@
+# Understanding the modulo operator
+# Modulo operator (%) is used to get the remainder of a fraction.
+
+print("Welcome to the Even and Odd finder!!!")
+
+number = int(input("Enter a number : "))
+
+if number % 2 == 0:
+    print(f"Number {number} is an even number.")
+
+else:
+    print(f"Number {number} is an odd number.")
