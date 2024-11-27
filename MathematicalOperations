@@ -1,0 +1,10 @@
+# Understanding mathematical operations
+
+print(int(3 * 3 + 3 / 3 - 3)) # should be 7 using either PEMDAS or BODMAS
+
+#changing the code to output it to 3
+
+print(3 * 3 + 3 / 3 - 7) # one by changing the value
+
+print(3 * (3 + 3) / 3 - 3) # second by changing the order of operations and how the PEMDAS/BODMAS rule works
+
