@@ -1,0 +1,30 @@
+# First project of python course on Day 2
+# Created a tip calculator that takes input from user for how much they would like to add to tip %
+# The program takes integers, floats as output
+# I didn't add a exception checker and the output verifier as this is a simple program 
+# and explicitly asking for float will give an error if user tries to enter anything outside of a number
+# Although I haven't checked but negatives could be used as a loophole
+
+print("Welcome to the tip calculator!")
+
+# Notes by Gaurav Saymi
+# Note all input function will have a data type of string
+# they will need to be converted to either float or int for this program to work
+
+# Converted these to floats to have the flexibility of having the tip variable with any desired percentage not only integers
+
+bill = float(input("What was the total bill? $"))
+tip = float(input("What percentage tip would you like to give? (From 10% - desired %) "))
+people = float(input("How many people to split the bill? "))
+
+#making new variable to give the total after the tip is added in total
+
+total_with_tip = bill * tip / 100 + bill
+
+# print(total_with_tip)
+
+total_after_split = round(total_with_tip / people, 2)
+
+# print(total_after_split)
+
+print(f"Each person should pay : ${total_after_split} dollars.")
