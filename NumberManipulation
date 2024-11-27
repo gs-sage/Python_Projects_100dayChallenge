@@ -1,4 +1,4 @@
-# Number manipulation and using the print(f"{variable_name}" command
+# Number manipulation and using the print(f"{variable_name}") command
 
 bmi = 84 / 1.65 ** 2
 
