@@ -1,0 +1,22 @@
+# Understanding Data types
+
+# subscripting is the method of pulling one character from a string.
+
+print("Hello" [4])
+print("Hello" [-1])
+
+# using a + sign in strings will just concatenete them.
+print("123" + "456")
+
+#integers = whole numbers
+print(123 + 456)
+
+# Large integers
+print(123_456_789)
+
+#float = floating point number
+print(100.2 + 21.55)
+
+# Boolean = has two values True or False
+print(True)
+print(False)
