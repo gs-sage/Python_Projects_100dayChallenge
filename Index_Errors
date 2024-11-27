@@ -1,0 +1,19 @@
+# understanding index errors and how index work in lists in python
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts", "Maryland",
+                     "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island",
+                     "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois",
+                     "Alabama", "Maine", "Missouri", "Arkansas", "Michigan", "Florida", "Texas", "Iowa", "Wisconsin",
+                     "California", "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado",
+                     "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma",
+                     "New Mexico", "Arizona", "Alaska", "Hawaii"]
+
+print(states_of_america)
+
+num_of_states = len(states_of_america) # will be 50
+
+# print(states_of_america[num_of_states]) # will give an index error since the index goes from 0 to 49 and not 1 to 50. # uncomment to see the error
+
+# to fix this all we will have to do is subtract 1
+
+print(states_of_america[num_of_states - 1])
