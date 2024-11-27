@@ -1,0 +1,28 @@
+# Understanding use of len function in python and the use of function type
+
+print(len("12345"))
+
+# type will accept any data type and return the data type
+
+print(type(100.23))
+print(type(123))
+print(type(True))
+print(type("String"))
+
+# Type conversion
+
+print("123" + "456")
+
+print(int("123") + int("456"))
+
+# cannot concatenate string and integer but changing the + sign to comma makes it so that they are not added but separate
+print("Number of letters in your name: ", len(input("Enter your name")))
+
+#second way to do it would be to make variables.
+username = input("Enter your name : ")
+length_of_name = len(username)
+print("Number of letters in your name: " + str(length_of_name))
+
+#third way is sto use str directly
+
+print("Number of letters in your name: " + str(len(input("Enter your name"))))
