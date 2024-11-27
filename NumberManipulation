@@ -1,0 +1,28 @@
+# Number manipulation and using the print(f"{variable_name}" command
+
+bmi = 84 / 1.65 ** 2
+
+print(bmi)
+print(int(bmi)) #floors the number removing all decimals
+print(round(bmi)) #rounds the number based on the number after the decimal
+print(round(bmi,2)) #rounding it to 2 decimal places.
+
+#Assignment operators
+
+score = 0
+height = 1.0
+is_winning = True
+
+#user scores a point
+
+score += 1 #adds 1 to the value of score.
+
+print(score)
+
+# f-strings
+
+print(f"Your score is {score}")
+print(f"Your height is {height}")
+print(f"Are you winning? {is_winning}")
+
+print(f"Your score is {score}, your height is {height} and it is {is_winning} you are winning.")
