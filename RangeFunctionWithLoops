@@ -1,0 +1,21 @@
+# Range is a function in python used in conjunction with another function
+# using range and the for loop to work the Gauss's problem
+# Gauss problem is the total of numbers from 1 to 100
+
+# we know the range has to be from 1 to 101 since range doesn't include the last number
+
+# creating a variable to store current value to add the numbers to
+gauss_num = 0
+
+# using for loop to iterate through the range.
+# the variable total will iterate through values 1 to 100
+# we add each value to the gauss_num variable
+# every time it goes through the range the value of gauss_num gets added
+
+for total in range(1, 101):
+    print(total)
+    gauss_num = gauss_num + total # adding the value of total to the gauss_num variable in each iteration
+
+# finally printing the total value
+print(gauss_num)
+
