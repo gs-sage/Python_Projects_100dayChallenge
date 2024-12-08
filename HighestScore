@@ -1,0 +1,53 @@
+student_scores = [150, 142, 185, 120, 171, 184, 149, 24, 59, 68, 199, 78, 65, 89, 86, 55, 91, 64, 89]
+#print(range(1, 10))
+
+# we can use the sum function in python to add all the numbers in the list
+
+print(sum(student_scores))
+
+# we can also manually do this with a loop
+# we will create a variable to store the count and the values to it through a loop
+
+total = 0
+
+# using a loop to iterate through the list and assign a value to the variable score
+# each time score will have a new value and will add it to the variable total
+# after going through all values in the list the loop will provide the total value
+
+for score in student_scores:
+    total = total + score
+    print(total) #printing total after each iteration to see how it works. this can be commented out
+
+print(total)
+
+
+# we can find the max value in a list using the max function in python
+
+print(max(student_scores))
+
+# Challenge : replicate the max function using the for loop and everything learned till today
+
+# creating a variable to store the value like in sum so use as a counter or value comparator
+
+max_value = 0
+
+for score in student_scores:
+    print(score) # to verify it is going through the list
+
+    if score > max_value:
+        max_value = score
+
+    else:
+        score = max_value
+
+print(f"The max value is {max_value}.")
+
+# Note : took me over 30 minutes to figure out after trying bunch and finally going through
+# the professors video
+
+
+
+
+
+
+
