@@ -1,0 +1,29 @@
+fruits = ["Apple", "Peach", "Pear"]
+
+# creating a variable fruit that will be used in the for loop
+# the for loop will use the variable fruit to iterate through the list fruits
+# it will assign the values in the list to the variable fruit one at a time
+
+# this loop prints each value in the list separately
+for fruit in fruits:
+    print(fruit)
+
+# using the same for loop we can concatenate to individual values for fruit
+# in this case we added pie to the end of string
+# since fruits is a list of strings this will work
+for fruit in fruits:
+    print(fruit + " pie")
+
+# we can also use integers and the idea is the same
+
+numbers_num = [1,2,3]
+
+for nums in numbers_num:
+    print(nums)
+
+# we can use any mathematical operators to perform actions in integers
+
+for nums in numbers_num:
+    print(nums * 2)
+    print(nums + 3)
+    print(nums / 2)
