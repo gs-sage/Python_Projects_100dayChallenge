@@ -1,4 +1,4 @@
-fruits = ["Apple", "Peach", "Pear"]
+fruits = ["Apple", "Peach", "Pear"] 
 
 # creating a variable fruit that will be used in the for loop
 # the for loop will use the variable fruit to iterate through the list fruits
