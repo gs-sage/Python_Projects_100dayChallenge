@@ -1,0 +1,108 @@
+# Learned about functions using the Reeborg's world site.
+# This file contains all of the code used for the puzzles in the reeborg's world
+
+# The site only had a turn_left() function.
+# Created a turn_right() function.
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+# Created a function that makes the robot go in a square.
+# Basically returns the robot to the starting point.
+
+def robot_square():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+
+# Created a jump() function that takes the robot over a wall
+# Made for constant landscape without changes and checks for when 
+# robot is at goal
+
+def jump():    
+    while at_goal()!=True:
+        move()
+        turn_left()
+        move()
+        turn_right()
+        move()
+        turn_right()
+        move()
+        turn_left()        
+    
+# Created a function that checks for wall in front and moves 
+
+def wall_check_jump():
+    while at_goal() != True:
+        if front_is_clear():
+            move()
+        elif wall_in_front():
+            turn_left()
+            move()
+            turn_right()
+            move()
+            turn_right()
+            move()
+            turn_left()
+            
+# Created a function that checks for varying walls in height
+# And makes the robot move as necessary
+
+def hurdle_four_challenge_jump():
+    if wall_in_front() and wall_on_right():
+        turn_left()
+        if front_is_clear():
+            move()
+        else:
+            turn_left()
+            move()
+    elif wall_in_front() == False and wall_on_right() == False:
+        turn_right()
+        move()
+    elif wall_in_front() and wall_on_right() == False:
+        turn_right()
+        move()
+    else:
+        move()
+
+# Same function by professor to check for varying heights of walls
+# and make robot move
+
+def hurdle_four_challenge_prof_version():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    move()
+    turn_right()
+    while front_is_clear():
+        move()
+    turn_left()
+
+# Created a function that makes the robot go out of a maze
+# It works for any random position the robot might be in
+
+def maze():
+    while front_is_clear() and right_is_clear():
+        if not front_is_clear():
+            turn_left()
+            move()
+        else:
+            move()
+    if front_is_clear():
+        move()
+    elif right_is_clear():
+        turn_right()
+        move()
+    else:
+        turn_left()
+
+while at_goal() != True:
+    maze()
