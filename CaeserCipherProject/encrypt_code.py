@@ -26,6 +26,20 @@ def encrypt(original_text, shift_amount):
     # will be a number since we are using the index() function to get the position of the letters from the list
     encrypted_word_index_value = current_word + shift_amount # this is not the word, this just has the index values of the new word
 
+    # now to make sure the code doesn't get index out of range error i.e. we have an list that goes from range 0-25 
+    # we are adding shift amount to get new index values based on user input
+    # as long as the values are under 25 we won't get error but once they cross 25 we will get index out of bounds error
+    # i.e. if the user types ze and wants a shift of 2 then the logic takes the index value of z which will be 25 and adds 2 to it
+    # which will be 27 and in our list of alphabet it only goes to 25 so we will get an error
+    # to resolve this we will use the modulo operator
+    # this operator works since it will take the remainder value and assign it to the variable in this case variable encrypted_word_index_value
+    # this works since small numbers divided by index range of alphabet which is 26 counting from 0-25 will give the remainder of the small number
+    # i.e. 2/26 will have a remainder of 2 since 26 can't divide 2 and if it is a big number that is 30/26 will give remainder of 4 since 26 goes 1 time into 30
+    # so this will resolve the out of bounds error for index
+    # all we have to do is to take the variable and just divide it by the length of the alphabet list
+
+    encrypted_word_index_value = encrypted_word_index_value % len(alphabet)
+
     # now we add those values to an string. We take the new index values and take it from the alphabet list.
     # we also need to add the empty string for this variable outside the loop 
     # or it will cause issues
