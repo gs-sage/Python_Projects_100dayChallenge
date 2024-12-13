@@ -34,7 +34,7 @@ def caeser(original_text, shift_amount, encode_decode):
 
 restart = "yes"
 
-while restart != "no":
+while restart == "yes:
   caeser(original_text=text, shift_amount=shift, encode_decode=direction)
   go_again = input("Type yes to go again. Type no to end. : ").lower()
 
