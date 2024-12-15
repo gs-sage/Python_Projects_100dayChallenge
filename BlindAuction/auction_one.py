@@ -9,7 +9,7 @@
 # the highest bid as the winner
 
 # creating an empty dictionary for the logic that happens
-# in line 20
+# in line 26
 
 # creating a boolean variable that will be true
 # and adding a while loop
