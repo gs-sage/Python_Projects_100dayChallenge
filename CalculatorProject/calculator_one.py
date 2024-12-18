@@ -39,7 +39,7 @@ def calculation():
       
       print(f"{first_number} {operation} {second_number} = {total_calculation}")
       
-      user_input = input("Type 'y' to continue with {total_calculation}. Type 'n' to start new calculation. : ").lower()
+      user_input = input(f"Type 'y' to continue with {total_calculation}. Type 'n' to start new calculation. : ").lower()
       
       if user_input == "y":
         first_number = total_calculation
