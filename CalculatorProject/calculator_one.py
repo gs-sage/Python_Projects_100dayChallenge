@@ -1,5 +1,7 @@
 # creating a calcultor program
 
+import art
+
 def add(n1, n2):
     return n1 + n2
 
@@ -47,6 +49,7 @@ def calculation():
 
 # we could have also made this function to take dictionary as input 
 # if we wanted to have the dictionary outside
+print(art.logo)
 calculation()
 
 
