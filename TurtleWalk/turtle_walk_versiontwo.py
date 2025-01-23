@@ -1,15 +1,14 @@
 from turtle import Turtle, Screen
 import random
 
-tim = Turtle()
-screen = Screen()
-
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
 
 # creating a direction list that will have numbers as East, west, north, south
 direction = [0, 90, 180, 270]
 
 # creating turtle object
+tim = Turtle()
+screen = Screen()
 
 # increasing pen width
 tim.pensize(15)
